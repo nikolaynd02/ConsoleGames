@@ -69,7 +69,7 @@ namespace CardGame66
                 }
 
                 powers[currCardPower]++;
-                if (suits[currCardPower] == 4)
+                if (powers[currCardPower] == 4)
                 {
                     powersToChoose.Remove(currCardPower);
                 }
