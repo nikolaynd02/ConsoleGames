@@ -80,5 +80,12 @@ namespace CardGame66
             }
 
         }
+
+        public Card DrawCard()
+        {
+            Card card = Cards[0];
+            Cards.RemoveAt(0);
+            return card;
+        }
     }
 }

@@ -22,8 +22,8 @@ namespace CardGame66
         {
             for(int i = 0; i < 6; i++)
             {
-                CardsInHand.Add(deck.Cards[0]);
-                deck.Cards.RemoveAt(0);
+                CardsInHand.Add(deck.DrawCard());
+                
             }
         }
 
@@ -46,8 +46,7 @@ namespace CardGame66
         {
             if(deck.Cards.Count > 0)
             {
-                CardsInHand.Add(deck.Cards[0]);
-                deck.Cards.RemoveAt(0);
+                CardsInHand.Add(deck.DrawCard());               
             }
         }
 
